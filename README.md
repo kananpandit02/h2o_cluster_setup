@@ -132,6 +132,28 @@ Ensure ports (e.g. 54323) are open across firewalls
 
 Nodes should be able to ping each other
 
+## 📊 Results
+
+The Random Forest model was evaluated on the Iris test dataset (20% split). Below are the key metrics:
+
+| Metric                 | Value                  |
+|------------------------|------------------------|
+| **Accuracy**           | 97.0%                  |
+| **Cross-validation RMSE** | ~0.17              |
+| **Model Type**         | Random Forest (H2O)    |
+| **Number of Trees**    | 50                     |
+| **Max Depth**          | 10                     |
+
+### 📌 Confusion Matrix
+
+| Actual \ Predicted     | Setosa | Versicolor | Virginica |
+|------------------------|--------|------------|-----------|
+| **Setosa**             | 20     | 0          | 0         |
+| **Versicolor**         | 1      | 19         | 0         |
+| **Virginica**          | 0      | 1          | 19        |
+
+
+
 
 ### 🙏 Acknowledgements
 
