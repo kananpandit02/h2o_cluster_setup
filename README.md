@@ -34,12 +34,12 @@ With the increasing need for scalable machine learning, traditional single-node 
 ## 📁 Project Structure
 ## 📦 H2O_Cluster_Project
 
+
 - [`sample_prog.py`](./sample_prog.py) – ML model script using H2O  
 - [`h2o_flatfile.txt`](./h2o_flatfile.txt) – IP list of nodes for H2O cluster  
 - [`Steps to Create H2O Cluster.txt`](./Steps%20to%20Create%20H2O%20Cluster.txt) – Step-by-step setup guide  
-- [`README.md`](./README.md) – Project documentation
--
--
+- [`DML_H2O.pdf`](./DML_H2O.pdf) – Final academic project report  
+- [`README.md`](./README.md) – Project documentation  
  ## ⚙️ Step-by-Step: How to Create a Multinode H2O.ai Cluster
 
 This section walks you through setting up a multinode H2O cluster using virtual environments, Java, and H2O's flatfile configuration method.
@@ -99,6 +99,8 @@ java -Xmx2g -jar h2o.jar -name trial1 -port 54323 \-flatfile h2o_flatfile.txt -n
 java -Xmx2g -jar h2o.jar -name trial1 -port 54323 \-flatfile h2o_flatfile.txt -network 172.20.252.0/24 \-peer 172.20.252.53:54323
 (Replace 172.20.252.53 with your actual master node IP.)
 ```
+(Replace 172.20.252.53 with your actual master node IP.)
+
 ## 📌 Explanation of the -network Option
 The -network 172.20.252.0/24 argument:
 
@@ -201,6 +203,14 @@ RKMVERI, Belur Math, West Bengal
 
 For his guidance, mentorship, and continuous encouragement.
 
+## 📜 License
+
+This project is licensed under the **Academic Use Only License**.
+
+- ✅ You are free to use, modify, and distribute this work **for academic, research, and educational purposes only**.
+- ❌ Commercial use, redistribution, or integration into proprietary products is **strictly prohibited** without prior written permission.
+
+If you wish to use this project beyond academic contexts, please contact the authors for licensing terms.
 
 
 ## 🌐 Connect With Us
