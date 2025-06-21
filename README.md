@@ -1,4 +1,4 @@
-# 🚀 Distributed Machine Learning Using H2O.ai Cluster Setup
+# 🚀 Distributed Machine Learning & AutoML Using H2O.ai Cluster Setup
 
 > A hands-on project demonstrating how to build a distributed machine learning cluster using H2O.ai across multiple nodes.
 
