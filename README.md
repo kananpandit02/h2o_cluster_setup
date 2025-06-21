@@ -261,6 +261,21 @@ This project is licensed under the **Academic Use Only License**.
 - ❌ Commercial use, redistribution, or integration into proprietary products is **strictly prohibited** without prior written permission.
 
 If you wish to use this project beyond academic contexts, please contact the authors for licensing terms.
+## 📌 End Note
+
+This project demonstrates how distributed computing with H2O.ai can significantly enhance machine learning workflows, even on smaller datasets like Iris. By combining the power of multinode H2O clusters with AutoML, users can automate model selection, improve performance, and scale their analysis across environments with minimal effort.
+
+Whether you're a student exploring ML infrastructure, a researcher experimenting with model performance, or an educator building reproducible workflows — this setup is designed to be educational, modular, and extendable.
+
+We hope this project helps you understand the fundamentals of:
+- Setting up a multinode ML cluster
+- Using H2O’s distributed API
+- Applying AutoML in a controlled and customizable way
+- Interpreting and validating results through structured metrics
+
+🎓 If you build on top of this work, we’d love to hear from you!
+
+Feel free to fork, extend, and contribute — and always give credit where due. 💡
 
 
 ## 🌐 Connect With Us
