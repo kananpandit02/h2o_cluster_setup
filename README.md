@@ -35,6 +35,12 @@ This section walks you through setting up a multinode H2O cluster using virtual 
 python3 -m venv env
 source env/bin/activate
 ```
+### 🔄 2. System Update and Java Installation
+```bash
+sudo apt update
+sudo apt install openjdk-11-jdk
+```
+H2O requires Java 8 or later. Use java -version and javac -version to verify.
 
 
 
