@@ -280,11 +280,11 @@ Feel free to fork, extend, and contribute — and always give credit where due. 
 
 ## 🌐 Connect With Us
 
-**Kanan Pandit (B2430051)**  
+**Kanan Pandit**  
 🌐 [Portfolio](https://kananpanditportfolio.netlify.app/)  
 ✉️ kananpandit02@gmail.com  
 
-**Sudam Paul (B2430023)**  
+**Sudam Paul**  
 🌐 [Portfolio](https://sudam23.github.io/My_Portfolio/)  
 ✉️ 2002sudam@gmail.com  
 
