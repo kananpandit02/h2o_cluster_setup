@@ -133,5 +133,30 @@ Ensure ports (e.g. 54323) are open across firewalls
 Nodes should be able to ping each other
 
 
+### 🙏 Acknowledgements
+
+Special thanks to:
+
+**Champak Kumar Dutta**  
+Assistant Professor, Department of Data Science  
+RKMVERI, Belur Math, West Bengal  
+
+For his guidance, mentorship, and continuous encouragement.
+
+
+
+## 🌐 Connect With Us
+
+**Kanan Pandit (B2430051)**  
+🌐 [Portfolio](https://kananpanditportfolio.netlify.app/)  
+✉️ kananpandit02@gmail.com  
+
+**Sudam Paul (B2430023)**  
+🌐 [Portfolio](https://sudam23.github.io/My_Portfolio/)  
+✉️ 2002sudam@gmail.com  
+
+**Institution**  
+Ramakrishna Mission Vivekananda Educational and Research Institute  
+📍 Belur Math, Howrah, West Bengal  
 
 
