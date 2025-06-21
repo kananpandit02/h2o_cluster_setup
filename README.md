@@ -24,6 +24,11 @@ This project focuses on deploying a **multinode H2O.ai cluster** for distributed
 With the increasing need for scalable machine learning, traditional single-node setups often fall short. H2O.ai offers a powerful, open-source framework that supports multinode computation out-of-the-box. This project aims to make the setup and usage of an H2O.ai distributed cluster accessible and easy to reproduce for students, researchers, and educators.
 
 ---
+## 📍 Course Project | Ramakrishna Mission Vivekananda Educational and Research Institute, Belur Math  
+🧠 Team: Tom and Jerry  
+👨‍💻 Members: Kanan Pandit , Sudam Paul  
+📅 Date: April 26, 2025
+
 
 
 ## 📁 Project Structure
