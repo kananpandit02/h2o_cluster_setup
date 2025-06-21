@@ -134,19 +134,21 @@ Nodes should be able to ping each other
 
 ## 📊 Results
 
-The Distributed Random Forest (DRF) model was evaluated on test data using H2O.ai in a distributed setup. Below are the detailed results:
+The Distributed Random Forest (DRF) model was evaluated on the Iris dataset using H2O.ai in a distributed cluster setup. The model was trained on 80% of the dataset and tested on the remaining 20% (27 samples).
+
+---
 
 ### 🔍 Model Performance Metrics
 
-| Metric                       | Value                       |
-|------------------------------|-----------------------------|
-| **Accuracy**                 | 92.59%                      |
-| **MSE (Mean Squared Error)** | 0.0378                      |
-| **RMSE (Root Mean Squared Error)** | 0.1945              |
-| **LogLoss**                  | 0.1049                      |
-| **Mean Per-Class Error**     | 0.1444                      |
-| **Overall Error Rate**       | 7.4% (2 misclassifications out of 27) |
-| **AUC / AUCPR**              | Not computed (domain too large or auc_type disabled) |
+| Metric                       | Value                                  |
+|------------------------------|----------------------------------------|
+| **Accuracy**                 | 92.59%                                 |
+| **MSE (Mean Squared Error)** | 0.0378                                 |
+| **RMSE (Root Mean Squared Error)** | 0.1945                         |
+| **LogLoss**                  | 0.1049                                 |
+| **Mean Per-Class Error**     | 0.1444                                 |
+| **Overall Error Rate**       | 7.41% (2 misclassifications out of 27) |
+| **AUC / AUCPR**              | Not computed (due to multiclass setup or auc_type=NONE) |
 
 ---
 
@@ -156,27 +158,34 @@ The Distributed Random Forest (DRF) model was evaluated on test data using H2O.a
 |--------------------|--------|------------|-----------|--------|--------|
 | **Setosa**         | 14     | 0          | 0         | 0.00   | 14     |
 | **Versicolor**     | 0      | 9          | 1         | 0.10   | 10     |
-| **Virginica**      | 0      | 2          | 8         | 0.33   | 10     |
-| **Totals**         | 14     | 11         | 9         | —      | 34     |
+| **Virginica**      | 0      | 1          | 2         | 0.33   | 3      |
+| **Totals**         | 14     | 10         | 3         | —      | 27     |
 
 > 📉 Misclassifications:
-> - 1 Versicolor → Virginica  
-> - 2 Virginica → Versicolor
+> - 1 **Versicolor** → misclassified as **Virginica**  
+> - 1 **Virginica** → misclassified as **Versicolor**
 
 ---
 
 ### 🎯 Classification Report
 
-| Class       | Precision | Recall | F1-Score |
-|-------------|-----------|--------|----------|
+| Class         | Precision | Recall | F1-Score |
+|---------------|-----------|--------|----------|
 | **Setosa**     | 1.00      | 1.00   | 1.00     |
-| **Versicolor** | 0.75      | 0.90   | 0.82     |
-| **Virginica**  | 0.89      | 0.80   | 0.84     |
-| **Macro Avg**  | **0.88**  | **0.90** | **0.89** |
+| **Versicolor** | 0.90      | 0.90   | 0.90     |
+| **Virginica**  | 0.67      | 0.67   | 0.67     |
+| **Macro Avg**  | **0.86**  | **0.86** | **0.86** |
 
 ---
 
-✅ These results demonstrate that the distributed setup using H2O.ai yields accurate and robust classification performance with minimal misclassifications.
+### 🧠 Interpretation
+
+- **Setosa** is perfectly predicted, as expected due to its well-separated features.
+- Minor confusion exists between **Versicolor** and **Virginica**, which is common in this dataset.
+- Despite a small test set (only 3 Virginica samples), the model maintains a strong **overall accuracy of 92.59%**.
+- The F1-Score for **Virginica** is lower due to the limited sample size and 1 misclassification.
+
+✅ These results demonstrate high performance using H2O’s distributed Random Forest, even with class imbalance in the test set.
 
 
 
