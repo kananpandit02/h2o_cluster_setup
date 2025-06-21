@@ -224,7 +224,19 @@ aml.train(
 localtime = time.asctime(time.localtime(time.time()))
 print("Local current time:", localtime)
 ```
+### 📋 View Leaderboard
+```python
+lb = aml.leaderboard
+print(lb.head(rows=lb.nrows))
+```
+### ✅ Notes
+featureColumns: List of column names to use as input features
 
+targetColumn: Name of the column you're trying to predict
+
+AutoML will explore models like GBM, XGBoost, Deep Learning, DRF, etc.
+
+This setup automatically handles preprocessing and model selection
 
 
 
