@@ -1,8 +1,30 @@
 # 🚀 Distributed Machine Learning Using H2O.ai Cluster Setup
 
-> A practical implementation of setting up a multinode H2O cluster for distributed machine learning. This guide walks through environment setup, flatfile-based clustering, and training a Random Forest model on the Iris dataset.
+> A hands-on project demonstrating how to build a distributed machine learning cluster using H2O.ai across multiple nodes.
 
 ---
+
+## 🧭 Overview
+
+This project focuses on deploying a **multinode H2O.ai cluster** for distributed machine learning. The cluster is used to train and evaluate models on real-world datasets efficiently. We showcase the entire setup from scratch: environment creation, H2O cluster formation, and executing a Random Forest classifier using Python.
+
+---
+
+## 🎯 Objective
+
+- To build and configure a distributed H2O.ai cluster
+- To leverage cluster-based computation for machine learning tasks
+- To train and evaluate models (Iris dataset) using `H2ORandomForestEstimator`
+- To provide a reusable, open, and academic framework for similar projects
+
+---
+
+## 💡 Motivation
+
+With the increasing need for scalable machine learning, traditional single-node setups often fall short. H2O.ai offers a powerful, open-source framework that supports multinode computation out-of-the-box. This project aims to make the setup and usage of an H2O.ai distributed cluster accessible and easy to reproduce for students, researchers, and educators.
+
+---
+
 
 ## 📁 Project Structure
 ## 📦 H2O_Cluster_Project
