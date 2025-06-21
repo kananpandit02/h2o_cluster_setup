@@ -2,6 +2,12 @@
 
 > A hands-on project demonstrating how to build a distributed machine learning cluster using H2O.ai across multiple nodes.
 
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
+[![H2O.ai](https://img.shields.io/badge/H2O.ai-Distributed%20ML-yellow?logo=dropbox)](https://www.h2o.ai/)
+[![License](https://img.shields.io/badge/License-Academic%20Use%20Only-lightgrey)](#license)
+[![Status](https://img.shields.io/badge/Project-Completed-brightgreen)](#)
+[![Author](https://img.shields.io/badge/Made%20By-Tom%20and%20Jerry-blueviolet)](#)
+
 ---
 
 ## 🧭 Overview
