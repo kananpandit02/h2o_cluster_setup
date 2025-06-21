@@ -134,23 +134,50 @@ Nodes should be able to ping each other
 
 ## 📊 Results
 
-The Random Forest model was evaluated on the Iris test dataset (20% split). Below are the key metrics:
+The Distributed Random Forest (DRF) model was evaluated on test data using H2O.ai in a distributed setup. Below are the detailed results:
 
-| Metric                 | Value                  |
-|------------------------|------------------------|
-| **Accuracy**           | 97.0%                  |
-| **Cross-validation RMSE** | ~0.17              |
-| **Model Type**         | Random Forest (H2O)    |
-| **Number of Trees**    | 50                     |
-| **Max Depth**          | 10                     |
+### 🔍 Model Performance Metrics
 
-### 📌 Confusion Matrix
+| Metric                       | Value                       |
+|------------------------------|-----------------------------|
+| **Accuracy**                 | 92.59%                      |
+| **MSE (Mean Squared Error)** | 0.0378                      |
+| **RMSE (Root Mean Squared Error)** | 0.1945              |
+| **LogLoss**                  | 0.1049                      |
+| **Mean Per-Class Error**     | 0.1444                      |
+| **Overall Error Rate**       | 7.4% (2 misclassifications out of 27) |
+| **AUC / AUCPR**              | Not computed (domain too large or auc_type disabled) |
 
-| Actual \ Predicted     | Setosa | Versicolor | Virginica |
-|------------------------|--------|------------|-----------|
-| **Setosa**             | 20     | 0          | 0         |
-| **Versicolor**         | 1      | 19         | 0         |
-| **Virginica**          | 0      | 1          | 19        |
+---
+
+### 📊 Confusion Matrix
+
+| Actual \ Predicted | Setosa | Versicolor | Virginica | Error | Count |
+|--------------------|--------|------------|-----------|--------|--------|
+| **Setosa**         | 14     | 0          | 0         | 0.00   | 14     |
+| **Versicolor**     | 0      | 9          | 1         | 0.10   | 10     |
+| **Virginica**      | 0      | 2          | 8         | 0.33   | 10     |
+| **Totals**         | 14     | 11         | 9         | —      | 34     |
+
+> 📉 Misclassifications:
+> - 1 Versicolor → Virginica  
+> - 2 Virginica → Versicolor
+
+---
+
+### 🎯 Classification Report
+
+| Class       | Precision | Recall | F1-Score |
+|-------------|-----------|--------|----------|
+| **Setosa**     | 1.00      | 1.00   | 1.00     |
+| **Versicolor** | 0.75      | 0.90   | 0.82     |
+| **Virginica**  | 0.89      | 0.80   | 0.84     |
+| **Macro Avg**  | **0.88**  | **0.90** | **0.89** |
+
+---
+
+✅ These results demonstrate that the distributed setup using H2O.ai yields accurate and robust classification performance with minimal misclassifications.
+
 
 
 
