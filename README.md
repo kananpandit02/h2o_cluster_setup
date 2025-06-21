@@ -191,6 +191,44 @@ The Distributed Random Forest (DRF) model was evaluated on the Iris dataset usin
 
 
 
+## 🔁 Optional: Use AutoML with Your Own Dataset
+
+If you're interested in extending this project further or applying it to your own dataset, you can easily integrate H2O’s AutoML functionality. This will automatically train and evaluate multiple machine learning models.
+
+### 🧪 Steps to Use AutoML
+
+```python
+import time
+from h2o.automl import H2OAutoML
+
+# ⏰ Start time
+localtime = time.asctime(time.localtime(time.time()))
+print("Local current time:", localtime)
+
+# ⚙️ Run AutoML
+aml = H2OAutoML(
+    max_models=15,
+    seed=1234,
+    exclude_algos=["StackedEnsemble"],  # Optional: exclude ensemble if needed
+    balance_classes=True
+)
+
+aml.train(
+    x=featureColumns,
+    y=targetColumn,
+    training_frame=train,
+    validation_frame=valid
+)
+
+# ⏰ End time
+localtime = time.asctime(time.localtime(time.time()))
+print("Local current time:", localtime)
+
+
+
+
+
+
 
 
 ### 🙏 Acknowledgements
